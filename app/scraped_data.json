@@ -1,296 +1,107 @@
 [
   {
+    "name": "Wuilt LLC",
+    "address": "\nThe GrEEK Campus, Mall Of Arabia (Gate 5, G11, محافظة الجيزة 12566",
+    "phone": "010 11781811",
+    "email": null,
+    "website": "https://www.wuilt.com/"
+  },
+  {
     "name": "INSTANT SOFTWARE SOLUTION",
     "address": "\nشارع الموسىقار علي إسماعيل، الدقي أ، قسم الدقي، محافظة الجيزة 3750330",
-    "phone": "015 54945711",
-    "all_phones": [
-      "015 54945711"
-    ],
+    "phone": "010 11781811",
     "email": null,
-    "website": null,
-    "details": [
-      "شارع الموسىقار علي إسماعيل، الدقي أ، قسم الدقي، محافظة الجيزة 3750330",
-      "015 54945711",
-      "26Q7+3P قسم الدقي"
-    ]
+    "website": null
+  },
+  {
+    "name": "Variiance",
+    "address": "\nامام مول العرب, 126 شارع سامح جادو، قسم أول 6 أكتوبر، محافظة الجيزة 12568",
+    "phone": "010 11781811",
+    "email": null,
+    "website": "http://www.variiance.com/"
+  },
+  {
+    "name": "Optivius",
+    "address": "\nBuilding 50 - 6th Touristic Zone Juhayna Square, محافظة الجيزة 12568",
+    "phone": "010 11781811",
+    "email": null,
+    "website": "https://optivius.com/"
+  },
+  {
+    "name": "Meta Software",
+    "address": "\nMall of Arabia, محور 26 يوليو، October, محافظة الجيزة 12588",
+    "phone": "010 11781811",
+    "email": null,
+    "website": "https://metasoftware.eg/"
   },
   {
     "name": "NTG Egypt Advanced Software",
     "address": "\n171 الهرم، الكوم الأخضر، قسم العمرانية، محافظة الجيزة 3531106",
-    "phone": "012 26655591",
-    "all_phones": [
-      "012 26655591"
-    ],
+    "phone": "010 11781811",
     "email": null,
-    "website": "http://ntgclarity.com/",
-    "details": [
-      "171 الهرم، الكوم الأخضر، قسم العمرانية، محافظة الجيزة 3531106",
-      "ntgclarity.com",
-      "012 26655591",
-      "X5V6+G7 قسم العمرانية"
-    ]
+    "website": "http://ntgclarity.com/"
+  },
+  {
+    "name": "el sewedy electrometer",
+    "address": "\n2X7F+948، طريق خاص بالمنتجع، قسم أول 6 أكتوبر، محافظة الجيزة 3236170",
+    "phone": "010 11781811",
+    "email": null,
+    "website": "http://www.elsewedyemg.com/"
+  },
+  {
+    "name": "Badgewell Software",
+    "address": "\n172 شارع سامح جادو، قسم أول 6 أكتوبر، محافظة الجيزة 3238021",
+    "phone": "010 11781811",
+    "email": null,
+    "website": "https://badgewell.com/"
   },
   {
     "name": "Approcks Software House",
     "address": "\n135 G -1st Gate - Pyramids Gardens - Giza - Egypt. Floor 1 - Office N 1, محافظة الجيزة 12572",
-    "phone": "010 98950489",
-    "all_phones": [
-      "010 98950489"
-    ],
+    "phone": "010 11781811",
     "email": null,
-    "website": "http://www.approcks.com/",
-    "details": [
-      "135 G -1st Gate - Pyramids Gardens - Giza - Egypt. Floor 1 - Office N 1, محافظة الجيزة 12572",
-      "approcks.com",
-      "010 98950489",
-      "X4F5+XP الهرم"
-    ]
-  },
-  {
-    "name": "Trend Egypt for Systems",
-    "address": "\n27 شارع التحرير، الدقي، الجيزة، القاهرة الكبرى، مصر 27 Tahrir Street, dokki, Giza, Greater Cairo, Egypt Giza",
-    "phone": "012 27744964",
-    "all_phones": [
-      "012 27744964"
-    ],
-    "email": null,
-    "website": "https://www.trend-egypt.com/",
-    "details": [
-      "27 شارع التحرير، الدقي، الجيزة، القاهرة الكبرى، مصر 27 Tahrir Street, dokki, Giza, Greater Cairo, Egypt Giza",
-      "trend-egypt.com",
-      "012 27744964",
-      "26P3+F4 قسم الدقي",
-      "معرَّف كنشاط تجاري تملكه امرأة"
-    ]
-  },
-  {
-    "name": "Prameg Software Development",
-    "address": "\n17 Mohi Al Din Abou Al Ezz, الدقي، قسم الدقي، محافظة الجيزة 3751110",
-    "phone": null,
-    "all_phones": [],
-    "email": null,
-    "website": "https://prameg.net/",
-    "details": [
-      "17 Mohi Al Din Abou Al Ezz, الدقي، قسم الدقي، محافظة الجيزة 3751110",
-      "prameg.net",
-      "26Q2+2J قسم الدقي",
-      "هل تملك هذا النشاط التجاري؟"
-    ]
+    "website": "http://www.approcks.com/"
   },
   {
     "name": "Talents Digital Services (TDS)",
     "address": "\n22G6+67X, El-Bostan, Sheikh Zayed City, Giza Governorate 3247604 building B1, أول الشيخ زايد، محافظة الجيزة 12588",
-    "phone": "010 60654797",
-    "all_phones": [
-      "010 60654797"
-    ],
+    "phone": "010 11781811",
     "email": null,
-    "website": "https://www.tds-int.com/",
-    "details": [
-      "22G6+67X, El-Bostan, Sheikh Zayed City, Giza Governorate 3247604 building B1, أول الشيخ زايد، محافظة الجيزة 12588",
-      "الموقع: بارك ستريت",
-      "مغلق ⋅ يفتح ١٠ ص يوم الاثنين",
-      "tds-int.com",
-      "010 60654797",
-      "22G6+8C أول الشيخ زايد"
-    ]
+    "website": "https://www.tds-int.com/"
   },
   {
-    "name": "ITS Information Technology Solutions",
-    "address": "\n26 شارع عدن، ميت عقبة، حي العجوزة، محافظة الجيزة 3752224",
-    "phone": null,
-    "all_phones": [],
+    "name": "AGI - Advanced Group For Information Technology",
+    "address": "\n97, 6th Touristic Village, 6th of October In Front Of \"Mall of Arabia\", behind \"Mobil Gas Station, محافظة الجيزة",
+    "phone": "010 11781811",
     "email": null,
-    "website": "http://www.egypt-its.com/",
-    "details": [
-      "26 شارع عدن، ميت عقبة، حي العجوزة، محافظة الجيزة 3752224",
-      "الموقع: Norel Misr",
-      "egypt-its.com",
-      "02 37493773",
-      "352V+QX ميت عقبة، حي العجوزة"
-    ]
+    "website": "https://agiteq.com/"
   },
   {
-    "name": "شركة برمجيات توريدات",
-    "address": "\nأحمد مصطفى، العمرانية الغربية، قسم العمرانية، محافظة الجيزة 3546244",
-    "phone": "010 94651644",
-    "all_phones": [
-      "010 94651644"
-    ],
+    "name": "Boodigi Digital Solutions",
+    "address": "boodigi.com",
+    "phone": "010 11781811",
     "email": null,
-    "website": null,
-    "details": [
-      "أحمد مصطفى، العمرانية الغربية، قسم العمرانية، محافظة الجيزة 3546244",
-      "010 94651644",
-      "256V+97 قسم العمرانية"
-    ]
+    "website": "https://www.boodigi.com/"
   },
   {
-    "name": "ماندرين للبرمجيات",
-    "address": "\n446 الهرم، Street، قسم العمرانية، محافظة الجيزة 12514",
-    "phone": "011 11481546",
-    "all_phones": [
-      "011 11481546"
-    ],
+    "name": "Curve Technology",
+    "address": "\nالسياحيه السادسه، 190 شارع سامح جادو، قسم أول 6 أكتوبر، محافظة الجيزة 3238024",
+    "phone": "010 11781811",
     "email": null,
-    "website": "http://mandarinsoftwares.com/",
-    "details": [
-      "446 الهرم، Street، قسم العمرانية، محافظة الجيزة 12514",
-      "مغلق ⋅ يفتح ١٢ م يوم الاثنين",
-      "facebook.com",
-      "mandarinsoftwares.com",
-      "011 11481546",
-      "2664+H8 قسم العمرانية",
-      "معرَّف كنشاط تجاري تملكه امرأة"
-    ]
+    "website": "https://cteg.net/"
   },
   {
-    "name": "Sahl for Software Production and Marketing - شركة سهل للبرمجيات والتسويق",
-    "address": "\n162 King Faisal St. El Haram, 162 شارع الملك فيصل , الهرم, Cairo - القاهرة, Egypt - مصر 12411",
-    "phone": null,
-    "all_phones": [],
+    "name": "Trend Egypt for Systems",
+    "address": "\n27 شارع التحرير، الدقي، الجيزة، القاهرة الكبرى، مصر 27 Tahrir Street, dokki, Giza, Greater Cairo, Egypt Giza",
+    "phone": "010 11781811",
     "email": null,
-    "website": null,
-    "details": [
-      "162 King Faisal St. El Haram, 162 شارع الملك فيصل , الهرم, Cairo - القاهرة, Egypt - مصر 12411",
-      "02 33829604",
-      "X5W3+PR الهرم",
-      "هل تملك هذا النشاط التجاري؟"
-    ]
+    "website": "https://www.trend-egypt.com/"
   },
   {
-    "name": "CÆLUM Egypt LLC. - A company of G2K group",
-    "address": "\n20 شارع وزارة الزراعة، الدقي، قسم الدقي، محافظة الجيزة 3751332",
-    "phone": null,
-    "all_phones": [],
+    "name": "Business 15",
+    "address": "No address found",
+    "phone": "010 11781811",
     "email": null,
-    "website": null,
-    "details": [
-      "20 شارع وزارة الزراعة، الدقي، قسم الدقي، محافظة الجيزة 3751332",
-      "02 37483661",
-      "3625+8M الدقي، قسم الدقي"
-    ]
-  },
-  {
-    "name": "أوركتك",
-    "address": "\n48 .,El Orman Tower, 12th floor, flat 123 شارل دي جول، الدقي أ، قسم الدقي، محافظة الجيزة 12311",
-    "phone": null,
-    "all_phones": [],
-    "email": null,
-    "website": "http://www.orchtech.com/",
-    "details": [
-      "48 .,El Orman Tower, 12th floor, flat 123 شارل دي جول، الدقي أ، قسم الدقي، محافظة الجيزة 12311",
-      "الموقع: Orman Tower برج الاورمان",
-      "orchtech.com",
-      "02 37622752",
-      "26M9+X4 قسم الدقي",
-      "هل تملك هذا النشاط التجاري؟"
-    ]
-  },
-  {
-    "name": "Namasoft",
-    "address": "\n37 ميدان عمان، الدقي، قسم الدقي، محافظة الجيزة 3751202",
-    "phone": null,
-    "all_phones": [],
-    "email": null,
-    "website": "https://www.namasoft.com/",
-    "details": [
-      "37 ميدان عمان، الدقي، قسم الدقي، محافظة الجيزة 3751202",
-      "namasoft.com",
-      "02 37615120",
-      "26R2+8R قسم الدقي"
-    ]
-  },
-  {
-    "name": "اورجا سوفت للبرمجيات وحلول الشبكات IT فرع اكتوبر",
-    "address": "\n130 ب حدائق الاهرام البوابه الاولي، خوفو، محافظة الجيزة",
-    "phone": "010 33809551",
-    "all_phones": [
-      "010 33809551"
-    ],
-    "email": null,
-    "website": null,
-    "details": [
-      "130 ب حدائق الاهرام البوابه الاولي، خوفو، محافظة الجيزة",
-      "010 33809551",
-      "X4H5+GR الهرم"
-    ]
-  },
-  {
-    "name": "شركة الوسق ش.ذ.م.م",
-    "address": "\nأولى الهرم، قسم العمرانية، محافظة الجيزة 3546220",
-    "phone": "010 01099344",
-    "all_phones": [
-      "010 01099344"
-    ],
-    "email": null,
-    "website": "https://al-wasaq.com/",
-    "details": [
-      "أولى الهرم، قسم العمرانية، محافظة الجيزة 3546220",
-      "al-wasaq.com",
-      "010 01099344",
-      "254Q+35 قسم العمرانية"
-    ]
-  },
-  {
-    "name": "Symbyo Technologies",
-    "address": "\n48 Kamal El Din Hussein St, الزهار، قسم الدقي، محافظة الجيزة 3751043",
-    "phone": null,
-    "all_phones": [],
-    "email": null,
-    "website": "http://www.symbyo.com/",
-    "details": [
-      "48 Kamal El Din Hussein St, الزهار، قسم الدقي، محافظة الجيزة 3751043",
-      "symbyo.com",
-      "02 37622003",
-      "26R2+65 الزهار، الأزبكية",
-      "هل تملك هذا النشاط التجاري؟"
-    ]
-  },
-  {
-    "name": "Testing Geeks",
-    "address": "\n23 Amer, Street, الدقي أ، قسم الدقي، محافظة الجيزة",
-    "phone": "011 12632635",
-    "all_phones": [
-      "011 12632635"
-    ],
-    "email": null,
-    "website": null,
-    "details": [
-      "23 Amer, Street, الدقي أ، قسم الدقي، محافظة الجيزة",
-      "011 12632635",
-      "26M7+H6 قسم الدقي"
-    ]
-  },
-  {
-    "name": "NewVisioN Business Software Design House",
-    "address": "\n156 Misr Wa Sudon Street Hada'ek، El، حدائق القبة",
-    "phone": "011 19393937",
-    "all_phones": [
-      "011 19393937"
-    ],
-    "email": null,
-    "website": null,
-    "details": [
-      "156 Misr Wa Sudon Street Hada'ek، El، حدائق القبة",
-      "011 19393937",
-      "25VV+XC حدائق القبة"
-    ]
-  },
-  {
-    "name": "Perfectech شركة تصميم مواقع في مصر",
-    "address": "\n2674+X5R، أولى، قسم الجيزة، محافظة الجيزة 3725005",
-    "phone": "011 40536934",
-    "all_phones": [
-      "011 40536934"
-    ],
-    "email": null,
-    "website": "https://www.perfectech-wd.com/",
-    "details": [
-      "2674+X5R، أولى، قسم الجيزة، محافظة الجيزة 3725005",
-      "perfectech-wd.com",
-      "011 40536934",
-      "هل تملك هذا النشاط التجاري؟"
-    ]
+    "website": null
   }
 ]

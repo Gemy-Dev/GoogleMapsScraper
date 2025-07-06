@@ -284,15 +284,15 @@ def index():
                             pass
                         
                         # Extract additional details
-                        detail_elements = page.query_selector_all('div[class*="Io6YTe fontBodyMedium"]')
-                        details_list = []
-                        phones = []
-                        for detail in detail_elements:
-                            detail_text = detail.inner_text().strip()
-                            if detail_text and detail_text != address:
-                                details_list.append(detail_text)
+                        # detail_elements = page.query_selector_all('div[class*="Io6YTe fontBodyMedium"]')
+                        # details_list = []
+                        # phones = []
+                        # for detail in detail_elements:
+                        #     detail_text = detail.inner_text().strip()
+                        #     if detail_text and detail_text != address:
+                                # details_list.append(detail_text)
                                 # Only extract phone numbers from details
-                                phones.extend(extract_phone_numbers(detail_text))
+                                # phones.extend(extract_phone_numbers(detail_text))
                         
                         # Remove duplicates and clean
                         phones = list(set(phones))
@@ -303,12 +303,12 @@ def index():
                             "name": name,
                             "address": address,
                             "phone": phones[0] if phones else None,
-                            "all_phones": phones,
+                            # "all_phones": phones,
                             "email": emails[0] if emails else None,
                             # "all_emails": emails,
                             "website": websites[0] if websites else None,
                             # "all_websites": websites,
-                            "details": details_list
+                            # "details": details_list
                         }
                         
                         data.append(business_data)
