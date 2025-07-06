@@ -96,17 +96,17 @@ json
     "website": "https://cteg.net/"
   }
 ]
+
+
 ❓ FAQ
 ⚠️ Why am I not getting email addresses?
 Most Google Maps listings don't expose emails. The scraper only extracts emails if they're publicly visible on the profile page.
 
+
 🔒 Is this against Google’s Terms?
 This tool mimics browser behavior without accessing hidden APIs, but always review Google’s Terms of Service before scraping data at scale.
 
-📬 Contact
-Need help or want to contribute?
 
-📧 Email: gamal.nasser.dev@gmail.com
 
 📄 License
 This project is licensed under the MIT License.
@@ -115,6 +115,3 @@ Feel free to use, modify, and distribute with attribution.
 💡 Contributions Welcome
 Pull requests, issues, and feedback are always appreciated!
 
-yaml
-نسخ
-تحرير
