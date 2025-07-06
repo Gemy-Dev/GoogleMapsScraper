@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GMS - Google Maps Scraper</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+      :root {
+        --primary-color: #2563eb;
+        --primary-dark: #1d4ed8;
+        --success-color: #10b981;
+        --warning-color: #f59e0b;
+        --danger-color: #ef4444;
+        --light-gray: #f8fafc;
+        --medium-gray: #e2e8f0;
+        --dark-gray: #475569;
+        --text-primary: #0f172a;
+        --text-secondary: #64748b;
+        --border-radius: 12px;
+        --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+        --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        --gradient-bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background: var(--gradient-bg);
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px 0;
+      }
+
+      .main-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 3rem;
+        animation: fadeInDown 0.8s ease-out;
+      }
+
+      .header h1 {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+      .header p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1.1rem;
+        font-weight: 300;
+        margin: 0;
+      }
+
+      .form-card {
+        background: white;
+        border-radius: 20px;
+        box-shadow: var(--shadow-lg);
+        padding: 2.5rem;
+        animation: fadeInUp 0.8s ease-out;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .form-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+      }
+
+      .form-step {
+        margin-bottom: 2rem;
+        opacity: 0;
+        animation: fadeInLeft 0.6s ease-out forwards;
+      }
+
+      .form-step:nth-child(1) { animation-delay: 0.2s; }
+      .form-step:nth-child(2) { animation-delay: 0.4s; }
+      .form-step:nth-child(3) { animation-delay: 0.6s; }
+      .form-step:nth-child(4) { animation-delay: 0.8s; }
+
+      .step-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .step-number {
+        background: var(--primary-color);
+        color: white;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-right: 1rem;
+        box-shadow: var(--shadow-sm);
+      }
+
+      .step-title {
+        color: var(--text-primary);
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0;
+        flex: 1;
+      }
+
+      .form-input {
+        width: 100%;
+        padding: 1rem 1.25rem;
+        border: 2px solid var(--medium-gray);
+        border-radius: var(--border-radius);
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        background: var(--light-gray);
+        color: var(--text-primary);
+        font-family: inherit;
+      }
+
+      .form-input:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        background: white;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        transform: translateY(-1px);
+      }
+
+      .form-input::placeholder {
+        color: var(--text-secondary);
+        font-style: italic;
+      }
+
+      .info-box {
+        background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+        border: 1px solid #f59e0b;
+        border-radius: var(--border-radius);
+        padding: 1.5rem;
+        margin: 2rem 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+      }
+
+      .info-icon {
+        color: var(--warning-color);
+        font-size: 1.5rem;
+        margin-top: 0.1rem;
+      }
+
+      .info-text {
+        color: #92400e;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin: 0;
+      }
+
+      .submit-section {
+        text-align: center;
+        margin-top: 2.5rem;
+        padding-top: 2rem;
+        border-top: 1px solid var(--medium-gray);
+      }
+
+      .submit-btn {
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+        color: white;
+        border: none;
+        border-radius: var(--border-radius);
+        padding: 1rem 2.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: var(--shadow-md);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      .submit-btn:active {
+        transform: translateY(0);
+      }
+
+      .submit-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+        transition: left 0.5s;
+      }
+
+      .submit-btn:hover::before {
+        left: 100%;
+      }
+
+      .flash-messages {
+        margin-top: 1rem;
+      }
+
+      .flash-message {
+        background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+        border: 1px solid var(--danger-color);
+        border-radius: var(--border-radius);
+        padding: 1rem;
+        margin: 0.5rem 0;
+        color: #991b1b;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        animation: slideIn 0.3s ease-out;
+      }
+
+      .flash-icon {
+        color: var(--danger-color);
+        font-size: 1.2rem;
+      }
+
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .main-container {
+          padding: 0 15px;
+        }
+        
+        .header h1 {
+          font-size: 2rem;
+        }
+        
+        .form-card {
+          padding: 1.5rem;
+        }
+        
+        .step-title {
+          font-size: 1rem;
+        }
+        
+        .form-input {
+          padding: 0.875rem 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header">
+        <h1><i class="fas fa-map-marker-alt"></i> GMS</h1>
+        <p>Google Maps Scraper - Professional Business Data Extraction</p>
+        <p>This Tool made by Egyption Delveloper Gamal Abdel Nasser</p>
+      </div>
+
+      <div class="form-card">
+        <form method="POST">
+          <div class="form-step">
+            <div class="step-header">
+              <div class="step-number">1</div>
+              <h3 class="step-title">ما الذي تريد البحث عنه تحديدًا؟</h3>
+            </div>
+            <input
+              type="text"
+              class="form-input"
+              autocomplete="off"
+              name="keyword"
+              placeholder="مثال: market, petshop, restaurant"
+              required
+            />
+          </div>
+
+          <div class="form-step">
+            <div class="step-header">
+              <div class="step-number">2</div>
+              <h3 class="step-title">في أي مدينة تريد البحث؟</h3>
+            </div>
+            <input
+              type="text"
+              class="form-input"
+              autocomplete="off"
+              name="city"
+              placeholder="أدخل اسم المدينة"
+              required
+            />
+          </div>
+
+          <div class="form-step">
+            <div class="step-header">
+              <div class="step-number">3</div>
+              <h3 class="step-title">أي منطقة أو حي أو حي؟</h3>
+            </div>
+            <input
+              type="text"
+              class="form-input"
+              autocomplete="off"
+              name="district"
+              placeholder="يمكن أن يكون أي منطقة"
+              required
+            />
+          </div>
+
+          <div class="form-step">
+            <div class="step-header">
+              <div class="step-number">4</div>
+              <h3 class="step-title">كم عدد النتائج التي تريد رؤيتها؟</h3>
+            </div>
+            <input
+              type="number"
+              class="form-input"
+              autocomplete="off"
+              name="qtn"
+              placeholder="عدد النتائج المطلوبة"
+              min="1"
+              max="1000"
+              required
+            />
+          </div>
+
+          <div class="info-box">
+            <i class="fas fa-info-circle info-icon"></i>
+            <p class="info-text">
+              بعد كشط الويب الذي يستغرق حوالي 2-3 دقائق، سوف تتلقى معلومات حول العدد المحدد تقريبًا من الشركات بتنسيق JSON. يرجى الانتظار حتى اكتمال العملية.
+            </p>
+          </div>
+
+          <div class="submit-section">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            <div class="flash-messages">
+              {% for message in messages %}
+              <div class="flash-message">
+                <i class="fas fa-exclamation-triangle flash-icon"></i>
+                <span>{{ message }}</span>
+              </div>
+              {% endfor %}
+            </div>
+            {% endif %}
+            {% endwith %}
+            
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-search"></i>
+              تحقيق النتائج
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
