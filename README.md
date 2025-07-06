@@ -1,47 +1,87 @@
-# GoogleMapsScraper
-Scrapes data from Google Maps businesses using Playwright it simulates a user search. A free alternative to Google's map API.
+# 📍 GoogleMapsScraper
 
-to run this code write this  [][ python -m flask run ]  in terminal
+**GoogleMapsScraper** is a lightweight Python tool that scrapes business data from **Google Maps** using [Playwright](https://playwright.dev/).  
+It simulates real user interactions — offering a **free alternative** to the official Google Maps API for basic business info extraction.
 
-# steps You are very close!
-You have successfully created a virtual environment and installed all dependencies inside it.
-But your terminal is still using the system Python (not the virtual environment) when running flask run.
+---
 
-# How to start :
+## 🛠 Features
 
-Activate your virtual environment
-In your project directory, run:
- [][ source venv/bin/activate ]
-You should see (venv) at the start of your terminal prompt.
+- 🔍 Simulates user search on Google Maps
+- 🧾 Extracts:
+  - Business name
+  - Address
+  - Phone number
+  - Website
+  - Email (if available)
+- 💾 Saves data to `scraped_data.json`
+- 🚫 No API keys or billing required
 
-Check Python and pip location
-Run:
-[#][ which python ]
-[#][ which pip ]
-Both should point to your venv directory.
+---
 
-Install dependencies again (if needed)
-If you haven't already, run:
-[#][ pip install flask playwright beautifulsoup4 ]
-[#][ python -m playwright install ]
-Run your Flask app
-Make sure you are in the parent directory of app and run:
-[#][ export FLASK_APP=app/views.py ]
-[#][ flask run ]
-or
-[#][  python -m flask run  ]
+## 🚀 Getting Started
 
-[#] you will revice the output in your browser at http://127.0.0.1:5000/
-[#] and you will get [scraped_data.json] file in the project root
+### 1. Clone the repository
 
-[#] if you need more help contact me on [gamal.nasser.dev@gmail.com]
+```bash
+git clone https://github.com/your-username/GoogleMapsScraper.git
+cd GoogleMapsScraper
+2. Set up a virtual environment
+bash
 
 
-## Returned JSON
+python -m venv venv
+source venv/bin/activate      # On Windows use: venv\Scripts\activate
+3. Install the dependencies
+bash
 
-<pre>
-  [
-   {
+
+pip install flask playwright beautifulsoup4
+python -m playwright install
+▶️ Running the App
+Make sure your virtual environment is active. Then run:
+
+bash
+
+
+export FLASK_APP=app/views.py     # On Windows: set FLASK_APP=app/views.py
+flask run
+Or alternatively:
+
+bash
+
+
+python -m flask run
+Open your browser and go to:
+
+cpp
+
+
+http://127.0.0.1:5000/
+Once the scraper runs, the result will be saved as:
+
+bash
+
+
+scraped_data.json
+🧪 Verifying Setup
+If things aren't working as expected, verify that Python and pip are from the virtual environment:
+
+bash
+
+
+which python
+which pip
+They should both point to your venv/ directory.
+
+📦 Sample Output
+Here's an example of the JSON you’ll get:
+
+json
+
+
+[
+  {
     "name": "Boodigi Digital Solutions",
     "address": "boodigi.com",
     "phone": "010 11781811",
@@ -50,11 +90,31 @@ or
   },
   {
     "name": "Curve Technology",
-    "address": "\nالسياحيه السادسه، 190 شارع سامح جادو، قسم أول 6 أكتوبر، محافظة الجيزة 3238024",
+    "address": "السياحية السادسة، 190 شارع سامح جادو، قسم أول 6 أكتوبر، محافظة الجيزة 3238024",
     "phone": "010 11781811",
     "email": null,
     "website": "https://cteg.net/"
-  },
-  ]
+  }
+]
+❓ FAQ
+⚠️ Why am I not getting email addresses?
+Most Google Maps listings don't expose emails. The scraper only extracts emails if they're publicly visible on the profile page.
 
-</pre>
+🔒 Is this against Google’s Terms?
+This tool mimics browser behavior without accessing hidden APIs, but always review Google’s Terms of Service before scraping data at scale.
+
+📬 Contact
+Need help or want to contribute?
+
+📧 Email: gamal.nasser.dev@gmail.com
+
+📄 License
+This project is licensed under the MIT License.
+Feel free to use, modify, and distribute with attribution.
+
+💡 Contributions Welcome
+Pull requests, issues, and feedback are always appreciated!
+
+yaml
+نسخ
+تحرير
