@@ -32,7 +32,7 @@
 
 #### Clone repository
 ```bash
-git clone https://github.com/your-username/GoogleMapsScraper.git
+git clone https://github.com/Gemy-Dev/GoogleMapsScraper.git
 cd GoogleMapsScraper
 ```
 #### Create and activate virtual environment
