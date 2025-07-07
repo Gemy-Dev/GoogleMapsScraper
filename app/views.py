@@ -5,6 +5,18 @@ from flask import jsonify, request, render_template, flash
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
 from .config import *
+import os
+import sys
+
+def get_browser_path():
+    if getattr(sys, 'frozen', False):
+        # Running in a PyInstaller bundle
+        base_path = sys._MEIPASS
+        return os.path.join(base_path, 'playwright', 'chrome.exe')
+    else:
+        # Running in normal Python environment
+        return None
+
 
 def extract_phone_numbers(text):
     """Extract phone numbers from text using regex patterns"""
@@ -173,6 +185,8 @@ def scroll_results_panel(page, target_count):
 
     return filtered_businesses
 
+from .config import app
+
 @app.route("/", methods=["GET", "POST"])
 def index():
     if request.method == "POST":
@@ -186,7 +200,11 @@ def index():
                 flash("gerekli kısımlardan birisi doldurulmamış sanki...")
                 return render_template("index.html")
             
-            browser = p.chromium.launch(headless=False)
+            # browser = p.chromium.launch(headless=False)
+            browser = p.chromium.launch(
+                            headless=False,
+                            executable_path=get_browser_path()
+                        )
             page = browser.new_page()
             
             # Set a longer timeout for page loads
@@ -283,17 +301,6 @@ def index():
                         except:
                             pass
                         
-                        # Extract additional details
-                        # detail_elements = page.query_selector_all('div[class*="Io6YTe fontBodyMedium"]')
-                        # details_list = []
-                        # phones = []
-                        # for detail in detail_elements:
-                        #     detail_text = detail.inner_text().strip()
-                        #     if detail_text and detail_text != address:
-                                # details_list.append(detail_text)
-                                # Only extract phone numbers from details
-                                # phones.extend(extract_phone_numbers(detail_text))
-                        
                         # Remove duplicates and clean
                         phones = list(set(phones))
                         emails = list(set(emails))
@@ -303,12 +310,8 @@ def index():
                             "name": name,
                             "address": address,
                             "phone": phones[0] if phones else None,
-                            # "all_phones": phones,
                             "email": emails[0] if emails else None,
-                            # "all_emails": emails,
                             "website": websites[0] if websites else None,
-                            # "all_websites": websites,
-                            # "details": details_list
                         }
                         
                         data.append(business_data)
@@ -352,3 +355,5 @@ def index():
     
     else:
         return render_template("index.html")
+if __name__ == "__main__":
+    app.run()

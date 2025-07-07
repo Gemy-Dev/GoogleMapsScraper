@@ -1,107 +1,51 @@
 [
   {
-    "name": "Wuilt LLC",
-    "address": "\nThe GrEEK Campus, Mall Of Arabia (Gate 5, G11, محافظة الجيزة 12566",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "https://www.wuilt.com/"
-  },
-  {
-    "name": "INSTANT SOFTWARE SOLUTION",
-    "address": "\nشارع الموسىقار علي إسماعيل، الدقي أ، قسم الدقي، محافظة الجيزة 3750330",
-    "phone": "010 11781811",
-    "email": null,
-    "website": null
-  },
-  {
-    "name": "Variiance",
-    "address": "\nامام مول العرب, 126 شارع سامح جادو، قسم أول 6 أكتوبر، محافظة الجيزة 12568",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "http://www.variiance.com/"
-  },
-  {
-    "name": "Optivius",
-    "address": "\nBuilding 50 - 6th Touristic Zone Juhayna Square, محافظة الجيزة 12568",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "https://optivius.com/"
-  },
-  {
-    "name": "Meta Software",
-    "address": "\nMall of Arabia, محور 26 يوليو، October, محافظة الجيزة 12588",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "https://metasoftware.eg/"
-  },
-  {
-    "name": "NTG Egypt Advanced Software",
-    "address": "\n171 الهرم، الكوم الأخضر، قسم العمرانية، محافظة الجيزة 3531106",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "http://ntgclarity.com/"
-  },
-  {
-    "name": "el sewedy electrometer",
-    "address": "\n2X7F+948، طريق خاص بالمنتجع، قسم أول 6 أكتوبر، محافظة الجيزة 3236170",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "http://www.elsewedyemg.com/"
-  },
-  {
-    "name": "Badgewell Software",
-    "address": "\n172 شارع سامح جادو، قسم أول 6 أكتوبر، محافظة الجيزة 3238021",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "https://badgewell.com/"
-  },
-  {
-    "name": "Approcks Software House",
-    "address": "\n135 G -1st Gate - Pyramids Gardens - Giza - Egypt. Floor 1 - Office N 1, محافظة الجيزة 12572",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "http://www.approcks.com/"
-  },
-  {
-    "name": "Talents Digital Services (TDS)",
-    "address": "\n22G6+67X, El-Bostan, Sheikh Zayed City, Giza Governorate 3247604 building B1, أول الشيخ زايد، محافظة الجيزة 12588",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "https://www.tds-int.com/"
-  },
-  {
-    "name": "AGI - Advanced Group For Information Technology",
-    "address": "\n97, 6th Touristic Village, 6th of October In Front Of \"Mall of Arabia\", behind \"Mobil Gas Station, محافظة الجيزة",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "https://agiteq.com/"
-  },
-  {
-    "name": "Boodigi Digital Solutions",
-    "address": "boodigi.com",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "https://www.boodigi.com/"
-  },
-  {
-    "name": "Curve Technology",
-    "address": "\nالسياحيه السادسه، 190 شارع سامح جادو، قسم أول 6 أكتوبر، محافظة الجيزة 3238024",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "https://cteg.net/"
-  },
-  {
-    "name": "Trend Egypt for Systems",
-    "address": "\n27 شارع التحرير، الدقي، الجيزة، القاهرة الكبرى، مصر 27 Tahrir Street, dokki, Giza, Greater Cairo, Egypt Giza",
-    "phone": "010 11781811",
-    "email": null,
-    "website": "https://www.trend-egypt.com/"
-  },
-  {
-    "name": "Business 15",
+    "name": "Business 1",
     "address": "No address found",
-    "phone": "010 11781811",
+    "phone": "010 02191573",
+    "email": null,
+    "website": "https://iTech.com"
+  },
+  {
+    "name": "Magdsoft ( software house برمجة تطبيقات ) شركة تصميم مواقع",
+    "address": "\n١٧ الدكتور إبراهيم ناجي، التاسعة، مدينة نصر، محافظة القاهرة‬ 4442630",
+    "phone": "012 11667919",
+    "email": null,
+    "website": "http://www.magdsoft.com/"
+  },
+  {
+    "name": "Software Premier Company",
+    "address": "\nBuilding 52 - Floor 11 - Apartment 1103 - Makram Ebed Street - Nasr City - Cairo عماره رقم 52 - الدور 11, شارع مكرم عبيد، القاهره, محافظة القاهرة‬ 11312",
+    "phone": "012 11667919",
     "email": null,
     "website": null
+  },
+  {
+    "name": "ستارت سوفت وير للخدمات البرمجية",
+    "address": "\n٢٦ شارع علي الجندي, متفرع من أحمد فخري، مدينة نصر، محافظة القاهرة‬",
+    "phone": "012 11667919",
+    "email": null,
+    "website": "http://startsoftware.net/"
+  },
+  {
+    "name": "XTND – website development company in egypt-شركة تصميم مواقع في مصر​",
+    "address": "\nAboDawood، مدينة نصر، محافظة القاهرة‬ 4450455",
+    "phone": "012 11667919",
+    "email": null,
+    "website": "http://xtnd.net/"
+  },
+  {
+    "name": "Pioneers Solutions",
+    "address": "\n٦ سمير عبد الرؤوف، مكرم عبيد، المنطقة الثامنة، مدينة نصر، محافظة القاهرة‬ 11762",
+    "phone": "012 11667919",
+    "email": null,
+    "website": "https://pioneers-solutions.com/"
+  },
+  {
+    "name": "Intcore - Web & Mobile App Development Company",
+    "address": "\nVila 79, قسم أول القاهرة الجديدة، محافظة القاهرة‬ 11728",
+    "phone": "012 11667919",
+    "email": null,
+    "website": "https://intcore.com/"
   }
 ]
